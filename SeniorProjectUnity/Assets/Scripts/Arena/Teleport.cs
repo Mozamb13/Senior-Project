@@ -8,9 +8,9 @@ public class Teleport : MonoBehaviour
     public Transform spawnPoint;
     public Transform objToMove;
 
+    public Squad squad => objToMove.GetComponent<Squad>();
     public void Move()
     {
-        print("moving squad");
         NavMeshAgent agent = objToMove.GetComponent<NavMeshAgent>();
         if(agent != null)
             agent.enabled = false;
@@ -19,5 +19,8 @@ public class Teleport : MonoBehaviour
 
         if(agent != null)
             agent.enabled = true;
+    
+        if(squad != null)
+            squad.ForceState(new FollowState(squad));
     }
 }

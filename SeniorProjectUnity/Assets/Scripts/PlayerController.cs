@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     //basic movement
     private CharacterController cc;
+	public GameObject sheathedSword;
     
     [Header("Basic Movement")]
     public Camera maincam;
@@ -55,6 +56,7 @@ public class PlayerController : MonoBehaviour
 	public LayerMask squad;
 	public List<Squad> squadMembers;
 	private OrderController order;
+	private Health squadHealth;
 
 	//variables for attack ram
 	public OrderController playerDefinedRam;
@@ -109,6 +111,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Start()
 	{
+		sheathedSword.SetActive(false);
 		tempStrength = playerStats.strength;
 		anim = GetComponent<Animator>();
 		cc = GetComponent<CharacterController>();
@@ -270,7 +273,7 @@ public class PlayerController : MonoBehaviour
 			else if (Input.GetKeyDown(KeyCode.F) && downedSquad)
 			{
 				//bug check to make sure the squad member has health componenet
-				var squadHealth = hit.collider.gameObject.GetComponent<Health>();
+				squadHealth = hit.collider.gameObject.GetComponent<Health>();
 				if(health == null)
 				{
 					Debug.Log("Squad member doesn't have health assigned!");
@@ -280,8 +283,6 @@ public class PlayerController : MonoBehaviour
 				{
 					//play healing animation
 					anim.SetBool(StaticVars.heal, true);
-					squadHealth.Heal(healPower);
-					squadHealth.alive = true;
 				}
 			}
 		}
@@ -471,6 +472,12 @@ public class PlayerController : MonoBehaviour
 			counterWindow = false;
 		}
 	}
+
+	//toggles the two swords for the heal animation
+	public void ToggleSwords()
+	{
+		sheathedSword.SetActive(!sheathedSword.activeSelf);
+	}
 	
 
 	//builds the current power loaded
@@ -536,6 +543,13 @@ public class PlayerController : MonoBehaviour
 			return true;
 		}
 		return false;
+	}
+
+	public void HealOther()
+	{
+		
+		squadHealth.Heal(healPower);
+		squadHealth.alive = true;
 	}
 
 	//calculates how much power the player has after attacking
