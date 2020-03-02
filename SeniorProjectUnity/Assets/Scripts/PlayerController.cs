@@ -246,7 +246,6 @@ public class PlayerController : MonoBehaviour
 						{
 							member.recalled = true;
 							order.inProgress = false;
-							print("Belay that soldier!");
 						}
 						//if that squad member is not doing the order, send them to do it
 						else
@@ -255,7 +254,6 @@ public class PlayerController : MonoBehaviour
 							member.givenOrder = true;
 							member.currentOrder = order.gameObject;
 							order.inProgress = true;
-							print("Do the thing, soldier!");
 							ramOrderEvent.Invoke();
 						}
 					}
@@ -264,7 +262,6 @@ public class PlayerController : MonoBehaviour
 					{
 						member.givenOrder = true;
 						member.currentOrder = hit.collider.gameObject;
-						print("attack that fool, soldier!");
 						killOrderEvent.Invoke();
 					}
 				}
@@ -292,7 +289,6 @@ public class PlayerController : MonoBehaviour
 		//recalls the squad to the player
 		if(Input.GetKeyDown(KeyCode.R))
 		{
-			print("Form up!");
 			//calls each member of the squad, cancels their orders, and sets them to follow the player
 			foreach (var member in squadMembers)
 			{
@@ -332,7 +328,6 @@ public class PlayerController : MonoBehaviour
 					member.currentOrder = playerDefinedRam.gameObject;
 					playerDefinedRam.inProgress = true;
 					ramPlaced = false;
-					print("RAM ATTACK SOLDIER!");
 					ramOrderEvent.Invoke();
 				}
 			}
@@ -570,7 +565,13 @@ public class PlayerController : MonoBehaviour
 	//this should be changed so the player can choose to have them come or not
 	private void Die()
 	{
+		//set all the animations to zero except death
+		anim.SetInteger(StaticVars.mouse0, 0);
+		anim.SetFloat(StaticVars.mouse1, 0);
+		anim.SetFloat(StaticVars.moveX, 0);
+		anim.SetFloat(StaticVars.moveZ, 0);
 		anim.SetBool(StaticVars.dead, true);
+
 		StaticVars.DeathAction(gameObject);
 		squadMembers[0].currentOrder = gameObject;
 		squadMembers[0].givenOrder = true;

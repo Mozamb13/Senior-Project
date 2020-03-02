@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 7331416411802431617
-    second: Counter Attack
+    second: MC_Counter Attack
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Counter Attack
+      name: MC_Counter Attack
       takeName: Counter Attack
       internalID: 7331416411802431617
       firstFrame: 465

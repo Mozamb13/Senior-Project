@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 2791020991159623506
-    second: Loose Health 4
+    second: MC_LooseHealth
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -35,18 +35,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Loose Health 4
+      name: MC_LooseHealth
       takeName: Loose Health 4
       internalID: 2791020991159623506
-      firstFrame: 670
-      lastFrame: 700
+      firstFrame: 700
+      lastFrame: 712
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

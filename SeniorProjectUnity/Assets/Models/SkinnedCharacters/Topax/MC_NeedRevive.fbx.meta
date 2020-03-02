@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -6794372953467665768
-    second: NeedRevive
+    second: MC_NeedRevive
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -35,18 +35,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: NeedRevive
+      name: MC_NeedRevive
       takeName: NeedRevive
       internalID: -6794372953467665768
-      firstFrame: 860
-      lastFrame: 900
+      firstFrame: 875
+      lastFrame: 960
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

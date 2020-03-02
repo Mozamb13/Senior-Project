@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -6185663256052747934
-    second: Revive
+    second: MC_Revive
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Revive
+      name: MC_Revive
       takeName: Revive
       internalID: -6185663256052747934
       firstFrame: 725
