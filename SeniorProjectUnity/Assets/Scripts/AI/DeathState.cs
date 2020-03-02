@@ -15,7 +15,10 @@ public class DeathState : BaseState
     {
         //if alive go to idle
         if(health.alive)
+        {
+            ai.anim.SetBool(StaticVars.dead, false);
             return typeof(IdleState);
+        }
 
         if (!died)
         {

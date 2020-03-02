@@ -19310,6 +19310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
+  sheathedSword: {fileID: 7644719076788091156}
   maincam: {fileID: 0}
   characterArt: {fileID: 6598447561837512421}
   canMove: 1
@@ -29184,26 +29185,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -3284371474883476432, guid: 83df4ad687d18c44582dabd2689740c0,
+    - target: {fileID: -8168254694419339967, guid: 83df4ad687d18c44582dabd2689740c0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1499528681039678484, guid: 83df4ad687d18c44582dabd2689740c0,
         type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: -8168254694419339967, guid: 83df4ad687d18c44582dabd2689740c0,
+    - target: {fileID: -3284371474883476432, guid: 83df4ad687d18c44582dabd2689740c0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83df4ad687d18c44582dabd2689740c0, type: 3}
+--- !u!4 &4711195846195555933 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -1527709060020114429, guid: 83df4ad687d18c44582dabd2689740c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3147447816617640542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7986940234020120900 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 83df4ad687d18c44582dabd2689740c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3147447816617640542}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7644719076788091156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4736243515397897034, guid: 83df4ad687d18c44582dabd2689740c0,
     type: 3}
   m_PrefabInstance: {fileID: 3147447816617640542}
   m_PrefabAsset: {fileID: 0}
@@ -29222,12 +29235,6 @@ Transform:
 --- !u!4 &6963426067644985546 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -3814843551901125996, guid: 83df4ad687d18c44582dabd2689740c0,
-    type: 3}
-  m_PrefabInstance: {fileID: 3147447816617640542}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &4711195846195555933 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -1527709060020114429, guid: 83df4ad687d18c44582dabd2689740c0,
     type: 3}
   m_PrefabInstance: {fileID: 3147447816617640542}
   m_PrefabAsset: {fileID: 0}

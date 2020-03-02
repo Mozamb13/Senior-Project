@@ -61,6 +61,7 @@ public class Squad : Base_AI
     public override void Die()
     {
         StaticVars.DeathAction(gameObject);
+        anim.SetBool(StaticVars.dead, true);
     }
 
     //heals the player

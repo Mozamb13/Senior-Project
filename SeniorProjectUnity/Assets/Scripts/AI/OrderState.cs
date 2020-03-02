@@ -40,6 +40,7 @@ public class OrderState : BaseState
         else if (squad.currentOrder.name == "Player")
         {
             squad.SetStoppingDist(5);
+            squad.SetDestination(squad.currentOrder.transform.position);
             //checks that the squad member is near to the player
             if (Vector3.Distance(gameObject.transform.position, squad.currentOrder.transform.position) <= 5f)
             {
