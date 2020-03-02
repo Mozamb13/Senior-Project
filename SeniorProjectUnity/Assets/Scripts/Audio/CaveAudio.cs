@@ -12,4 +12,9 @@ public class CaveAudio : MonoBehaviour
             audio.Play();
         }
     }
+    void OnTriggerExit(Collider other){
+        if(other.tag == "Player"){
+            audio.Stop();
+        }
+    }
 }
