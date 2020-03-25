@@ -50,7 +50,7 @@ public class FollowState : BaseState
         else if (Vector3.Distance(squad.transform.position, player.transform.position) > squad.followDistance)
         {
             squad.anim.SetBool(StaticVars.walk, true);
-            squad.SetSpeed(squad.walkSpeed);
+            squad.SetSpeed(squad.runSpeed);
             squad.SetStoppingDist(squad.followDistance);
             squad.SetDestination(player.transform.position);
             return typeof(FollowState);

@@ -19317,8 +19317,8 @@ MonoBehaviour:
   receiveInput: 1
   rolling: 0
   verticalVelocity: 0
-  jogSpeed: 10
-  runSpeed: 15
+  jogSpeed: 7
+  runSpeed: 13
   walkSpeed: 5
   gravity: 30
   rollDist: 8
@@ -29188,7 +29188,7 @@ PrefabInstance:
     - target: {fileID: -8168254694419339967, guid: 83df4ad687d18c44582dabd2689740c0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1499528681039678484, guid: 83df4ad687d18c44582dabd2689740c0,
         type: 3}
@@ -29198,7 +29198,7 @@ PrefabInstance:
     - target: {fileID: -3284371474883476432, guid: 83df4ad687d18c44582dabd2689740c0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83df4ad687d18c44582dabd2689740c0, type: 3}

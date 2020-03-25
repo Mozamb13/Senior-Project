@@ -3140,7 +3140,7 @@ PrefabInstance:
     - target: {fileID: 6412172978452846831, guid: cf86d05b7fef0974ca73cbc3919dbd3a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026083228087678200, guid: cf86d05b7fef0974ca73cbc3919dbd3a,
         type: 3}
@@ -4283,7 +4283,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 646153683}
-  m_LocalRotation: {x: 0.18918636, y: 0.09505756, z: -0.018403983, w: 0.97715604}
+  m_LocalRotation: {x: 0.1890954, y: 0.09976824, z: -0.019316018, w: 0.97668636}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -4516,7 +4516,7 @@ MonoBehaviour:
   m_LegacyBlendHint: 0
   m_YAxis:
     Value: 0.5
-    m_MaxSpeed: 2
+    m_MaxSpeed: 0.5
     m_AccelTime: 0.2
     m_DecelTime: 0.1
     m_InputAxisName: Mouse Y
@@ -4539,7 +4539,7 @@ MonoBehaviour:
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
     Value: 0
-    m_MaxSpeed: 200
+    m_MaxSpeed: 125
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -5411,7 +5411,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 764152395}
-  m_LocalRotation: {x: 0.11874592, y: 0.096131206, z: -0.011551581, w: 0.9881927}
+  m_LocalRotation: {x: 0.118688844, y: 0.10089509, z: -0.012124034, w: 0.9877177}
   m_LocalPosition: {x: 469.639, y: -222.37, z: 510.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5873,7 +5873,7 @@ MonoBehaviour:
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
     Value: 0
-    m_MaxSpeed: 200
+    m_MaxSpeed: 125
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -6099,7 +6099,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 866211911}
-  m_LocalRotation: {x: 0.11874593, y: 0.0961312, z: -0.011551585, w: 0.9881927}
+  m_LocalRotation: {x: 0.11868884, y: 0.100895084, z: -0.012124026, w: 0.9877177}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6778,7 +6778,7 @@ PrefabInstance:
     - target: {fileID: 6412172978452846831, guid: cf86d05b7fef0974ca73cbc3919dbd3a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026083228087678200, guid: cf86d05b7fef0974ca73cbc3919dbd3a,
         type: 3}
@@ -8036,6 +8036,11 @@ PrefabInstance:
       propertyPath: scui
       value: 
       objectReference: {fileID: 595497440}
+    - target: {fileID: 8594929155897726072, guid: 9f358f1a1d830c84ea9fcca9b0cfc414,
+        type: 3}
+      propertyPath: runSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8594929155897726074, guid: 9f358f1a1d830c84ea9fcca9b0cfc414,
         type: 3}
       propertyPath: healthSlider
@@ -8128,7 +8133,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1338349226}
-  m_LocalRotation: {x: 0.016630825, y: 0.09680924, z: -0.0016178449, w: 0.9951627}
+  m_LocalRotation: {x: 0.016622808, y: 0.101606734, z: -0.0016980227, w: 0.99468434}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9115,7 +9120,7 @@ MonoBehaviour:
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
     Value: 0
-    m_MaxSpeed: 200
+    m_MaxSpeed: 125
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -11691,7 +11696,7 @@ PrefabInstance:
     - target: {fileID: 6412172978452846831, guid: cf86d05b7fef0974ca73cbc3919dbd3a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6026083228087678200, guid: cf86d05b7fef0974ca73cbc3919dbd3a,
         type: 3}
@@ -13266,7 +13271,7 @@ MonoBehaviour:
     m_LegacyVelocityFilterStrength: -1
   m_XAxis:
     Value: 0
-    m_MaxSpeed: 200
+    m_MaxSpeed: 125
     m_AccelTime: 0.1
     m_DecelTime: 0.1
     m_InputAxisName: Mouse X
@@ -14677,6 +14682,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1463527983, guid: 093e5c13babd7b041b9ac8fc951a0a26, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4349601396795417861, guid: 093e5c13babd7b041b9ac8fc951a0a26,
         type: 3}
       propertyPath: maincam
@@ -14808,7 +14817,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1113645459, guid: 093e5c13babd7b041b9ac8fc951a0a26, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4349601396795417866, guid: 093e5c13babd7b041b9ac8fc951a0a26,
         type: 3}
@@ -14841,7 +14850,7 @@ PrefabInstance:
     - target: {fileID: 832855437512688227, guid: 093e5c13babd7b041b9ac8fc951a0a26,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 636314929212134808, guid: 093e5c13babd7b041b9ac8fc951a0a26,
         type: 3}
@@ -17577,10 +17586,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.96969026
-      objectReference: {fileID: 0}
-    - target: {fileID: 1463527983, guid: 093e5c13babd7b041b9ac8fc951a0a26, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4349601396416852119, guid: 093e5c13babd7b041b9ac8fc951a0a26, type: 3}

@@ -28,7 +28,7 @@ public class OrderState : BaseState
             return typeof(FollowState);
         }
         //if the squad's currentOrder is an enemy, chase the enemy
-        else if(squad.currentOrder.name == squad.enemyTags[0])
+        else if(squad.currentOrder.name.Contains(squad.enemyTags[0]))
         {
             squad.enemyFound = true;
             squad.currentTarget = squad.currentOrder;
