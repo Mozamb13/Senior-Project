@@ -86,37 +86,8 @@ public class AttackState : BaseState
             ai.anim.SetBool(StaticVars.attack, false);
             return typeof(ChaseState);
         }
-        //if too close to other ai, make space
-        else if (enemy != null && ai.CheckSpace() != null)
-        {
-            var position = transform.position;
-            Vector3 direction = position - ai.CheckSpace().transform.position;
-            direction.Normalize();
-            Vector3 destination = position + direction;
-            ai.SetDestination(destination);
-            if(enemyManager != null)
-                enemyManager.RemoveFromQueue(enemy);
-            return typeof(AttackState);
-        }
-        else if(enemy != null && enemyManager != null)
-        {
-            if(!enemyManager.IsInQueue(enemy))
-                enemyManager.AddToQueue(enemy);
-            if(enemyManager.CheckNext(enemy) == enemy)
-            {
-                if (ai.ai.destination != ai.currentTarget.transform.position)
-                    ai.SetDestination(ai.currentTarget.transform.position);
-                ai.anim.SetBool(StaticVars.attack, true);
-            }
-            return typeof(AttackState);
-        }
         else
         {
-            if(squad == null)
-                return null;
-
-            if (ai.ai.destination != ai.currentTarget.transform.position)
-                ai.SetDestination(ai.currentTarget.transform.position);
             ai.anim.SetBool(StaticVars.attack, true);
             return typeof(AttackState);            
         }
