@@ -53,6 +53,12 @@ public class audiomanager : MonoBehaviour
         Sound s = Array.Find(sounds, sound => sound.name == name);
         s.source.Stop();
     }
+
+/*
+if anim state changes
+s.source.Stop();
+*/
+
     /*
     when referencing this to play a sound at an event
     Write in the script that causes the thing to happen

@@ -253,7 +253,8 @@ AnimatorStateMachine:
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -2300120708804287494}
   m_AnyStatePosition: {x: 10, y: -10, z: 0}
   m_EntryPosition: {x: 10, y: 30, z: 0}
   m_ExitPosition: {x: 10, y: 70, z: 0}
@@ -880,7 +881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipName: Shield
+  turnOff: 0
+  clipName: Shield1
 --- !u!1101 &-6569602614202358933
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1767,6 +1769,20 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-3518305061007478274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnOff: 0
+  clipName: Death
 --- !u!1101 &-3509126168192407009
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1987,6 +2003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnOff: 0
   clipName: Run
 --- !u!1101 &-2916428039132625976
 AnimatorStateTransition:
@@ -2042,6 +2059,7 @@ AnimatorState:
   - {fileID: -8012195015216155600}
   m_StateMachineBehaviours:
   - {fileID: -7254438699803176038}
+  - {fileID: 9174602597568015586}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -2224,6 +2242,20 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-2300120708804287494
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnOff: 1
+  clipName: Footsteps
 --- !u!1101 &-2299622657612757426
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3386,7 +3418,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipName: hurt
+  turnOff: 0
+  clipName: Hurt
 --- !u!1101 &298050569291945300
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -3989,7 +4022,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipName: Sword Swing 02
+  turnOff: 0
+  clipName: Weapon2
 --- !u!1101 &1299575862123180966
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4067,7 +4101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipName: Sword Swing 01
+  turnOff: 0
+  clipName: Weapon1
 --- !u!114 &1419934016948854652
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4080,7 +4115,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipName: PC Vocal 02
+  turnOff: 0
+  clipName: PCShout2
 --- !u!1101 &1438998952034447656
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -4793,6 +4829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnOff: 0
   clipName: Heal
 --- !u!1102 &3399668403475254860
 AnimatorState:
@@ -4806,7 +4843,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1567324207275670178}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -3518305061007478274}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -4865,6 +4903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnOff: 0
   clipName: Reviving
 --- !u!114 &3431506420198305691
 MonoBehaviour:
@@ -4943,7 +4982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipName: PC Vocal 01
+  turnOff: 0
+  clipName: PCShout1
 --- !u!1101 &3593203953657393176
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -5722,6 +5762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnOff: 0
   clipName: PC Vocal 04
 --- !u!114 &5569932693192250784
 MonoBehaviour:
@@ -5735,7 +5776,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipName: PC Vocal 03
+  turnOff: 0
+  clipName: PCShout3
 --- !u!1101 &5591112469204997554
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6406,7 +6448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipName: Need heal
+  turnOff: 0
+  clipName: NeedRevive
 --- !u!1101 &8406523403424740983
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -6534,7 +6577,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipName: Sword Swing 03
+  turnOff: 0
+  clipName: Weapon3
 --- !u!1102 &8589502755056553536
 AnimatorState:
   serializedVersion: 5
@@ -6833,3 +6877,17 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &9174602597568015586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a96b59ad86a0da94f945ee6f270f0989, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnOff: 0
+  clipName: Roll

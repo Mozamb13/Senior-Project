@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioController : StateMachineBehaviour
 {
     public audiomanager manager => GameObject.Find("AudioManager").GetComponent<audiomanager>();
+    public bool turnOff;
     public string clipName;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -20,11 +21,12 @@ public class AudioController : StateMachineBehaviour
     //    
     //}
 
-    // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    
-    //}
+    //OnStateExit is called when a transition ends and the state machine finishes evaluating this state
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+       if(turnOff)
+        manager.Stop(clipName);
+    }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
