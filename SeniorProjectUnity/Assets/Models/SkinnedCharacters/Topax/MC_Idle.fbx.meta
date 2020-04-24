@@ -6,7 +6,42 @@ ModelImporter:
   - first:
       74: -3100369314251171874
     second: MC_Idle
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseFemaleV2_Armor
+    second: {fileID: 2100000, guid: fe962375d4d6ac44bbe7e7dc650b396c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseFemaleV2_Eyes_Cornea
+    second: {fileID: 2100000, guid: db000962bdc2ebd4a8e42b284956efff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseFemaleV2_Head_Feathers
+    second: {fileID: 2100000, guid: 24f76a640b24ae94e96be59f0c853537, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseFemaleV2_SkinandCloth
+    second: {fileID: 2100000, guid: 7879d3324aeed4241bd83a7dbfee8b7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseFemaleV2_WetEye
+    second: {fileID: 2100000, guid: 8dc0864ea8a2a0a4d856a9d6575599e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shield_02_lambert3
+    second: {fileID: 2100000, guid: 2ea1f076a406c5f42bb8018530cee3f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn2
+    second: {fileID: 2100000, guid: 24f76a640b24ae94e96be59f0c853537, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
