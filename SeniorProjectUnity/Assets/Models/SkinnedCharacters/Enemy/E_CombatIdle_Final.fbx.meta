@@ -48,8 +48,8 @@ ModelImporter:
       name: E_CombatIdle_Final
       takeName: Take 001
       internalID: 1827226128182048838
-      firstFrame: 296
-      lastFrame: 329
+      firstFrame: 299
+      lastFrame: 328
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
