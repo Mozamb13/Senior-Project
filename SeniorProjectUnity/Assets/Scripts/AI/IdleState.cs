@@ -39,10 +39,10 @@ public class IdleState : BaseState
         else if (squad != null && squad.currentOrder != null && squad.givenOrder)
             return typeof(OrderState);
         //if found an enemy but out of range, chase
-        else if (ai.enemyFound && Vector3.Distance(ai.currentTarget.transform.position, ai.transform.position) > ai.stats.range)
+        else if (enemy == null && ai.enemyFound && Vector3.Distance(ai.currentTarget.transform.position, ai.transform.position) > ai.stats.range)
             return typeof(ChaseState);
         //if found an enemy and in range, attack
-        else if (ai.enemyFound && Vector3.Distance(ai.currentTarget.transform.position, ai.transform.position) <= ai.stats.range)
+        else if (enemy == null && ai.enemyFound && Vector3.Distance(ai.currentTarget.transform.position, ai.transform.position) <= ai.stats.range)
             return typeof(AttackState);
         //if squad member nd too far from player, follow player
         else if (squad != null && Vector3.Distance(squad.transform.position, squad.player.transform.position) > squad.followDistance)

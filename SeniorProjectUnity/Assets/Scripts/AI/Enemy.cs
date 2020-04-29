@@ -12,12 +12,12 @@ public class Enemy : Base_AI
         var states = new Dictionary<Type, BaseState>
         {
             { typeof(IdleState), new IdleState(this) },
-            { typeof(ChaseState), new ChaseState(this) },
-            { typeof(AttackState), new AttackState(this, enemyManager) },
+            //{ typeof(ChaseState), new ChaseState(this) },
+            //{ typeof(AttackState), new AttackState(this, enemyManager) },
             { typeof(DeathState), new DeathState(this) },
             //{ typeof(WanderState), new WanderState(this) },
             { typeof(DamagedState), new DamagedState(this) },
-            { typeof(SearchState), new SearchState(this) }
+            //{ typeof(SearchState), new SearchState(this) }
         };
 
         fsm.SetStates(states);
