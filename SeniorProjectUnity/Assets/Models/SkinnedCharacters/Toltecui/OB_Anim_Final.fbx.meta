@@ -33,7 +33,27 @@ ModelImporter:
   - first:
       74: 45604099344650323
     second: OB_TakeDamage_Final
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseBrotherMale_Armor
+    second: {fileID: 2100000, guid: 88977e2bdbe74574b83422bc488d7c20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseBrotherMale_Body
+    second: {fileID: 2100000, guid: 30241fd50e522814d925e51fd2d3d4ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseBrotherMale_Eyes
+    second: {fileID: 2100000, guid: e339583ae3bfab84692ff0a05c6cf7b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseBrotherMale_Face
+    second: {fileID: 2100000, guid: 740eaa92a64b97848b1125c1613480f1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

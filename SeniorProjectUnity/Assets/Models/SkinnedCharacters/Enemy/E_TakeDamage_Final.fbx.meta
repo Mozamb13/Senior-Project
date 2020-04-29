@@ -6,7 +6,17 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: E_TakeDamage_Final
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DividedBaseEnemyMale_lambert2
+    second: {fileID: 2100000, guid: 0139a58c4373db14b8b86863377182f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: b0258ea151cb54e48a97f4e0c9b3bb00, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
